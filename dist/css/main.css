@@ -377,7 +377,7 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../assets/images/greeting_bg.webp");
+  background-image: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/greeting_bg.webp");
   background-size: 130%;
   background-position: left center;
   filter: blur(5px);
@@ -483,7 +483,7 @@ header {
   border-bottom: 35px solid #eeede8;
   width: 100%;
   height: 100%;
-  background: url("../../assets/images/couple_frame.webp") no-repeat 49% 48%/192%;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/couple_frame.webp") no-repeat 49% 48%/192%;
 }
 .couple .couple-photo .tape {
   position: absolute;
@@ -586,7 +586,7 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/images/location_bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/location_bg.jpg");
   background-size: cover;
   background-position: top;
   filter: blur(5px);
@@ -945,7 +945,7 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../assets/images/greeting_bg.webp");
+  background-image: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngan-tien/greeting_bg.webp");
   background-size: cover;
   background-position: center;
   filter: blur(6px);

@@ -592,7 +592,7 @@
   /* ======================================================
        RSVP
     ====================================================== */
-  async function handleFormSubmit(e, lang = "vi") {
+  async function handleFormSubmit(e, formType, lang = "vi") {
     e.preventDefault();
 
     const form = e.target;
@@ -668,7 +668,9 @@
       didOpen: () => Swal.showLoading(),
     });
 
-    const sheetURL = "?sheet=confirm";
+    const sheetURL = formType === "nhatrai"
+      ? "https://script.google.com/macros/s/AKfycbzi-vfwTsjrg-zItWx_Xd-amE2SbIu-t0oijpA08NWpVijAnSPLF01Ko2f_8nSWW1jJ/exec?sheet=nha_trai"
+      : "https://script.google.com/macros/s/AKfycbzi-vfwTsjrg-zItWx_Xd-amE2SbIu-t0oijpA08NWpVijAnSPLF01Ko2f_8nSWW1jJ/exec?sheet=nha_gai";
 
     try {
       const res = await fetch(sheetURL, {
@@ -741,8 +743,12 @@
     // }
 
     const form = document.forms["rsvpForm"];
+    const form_nhatrai = document.forms["rsvpForm_nhatrai"];
     if (form) {
-      form.addEventListener("submit", (e) => handleFormSubmit(e, "vi"));
+      form.addEventListener("submit", (e) => handleFormSubmit(e, "nhagai", "vi"));
+    }
+    if (form_nhatrai) {
+      form_nhatrai.addEventListener("submit", (e) => handleFormSubmit(e, "nhatrai", "vi"));
     }
   }
 
